@@ -1,0 +1,127 @@
+/* pc */
+/* dùng dv em */
+@media (min-width: 1024px /*=64em*/){
+
+}
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+    
+}
+/* mobile */
+@media (max-width: 739px){
+    /* hiện xuống */
+    #nav >li{
+        display: block;
+    }
+    /* ẩn search */
+    #header .search-btn{
+        display: none;
+    }
+    /* làm dài chố ấn  */
+    #nav {
+        display: block;
+    }
+    /* chỉ hiện mobile menu khi ở mobile */
+    #header .mobile-menu-btn{
+        display: block;
+    }
+    /* ko ấn đc hoem dài */
+    #nav > li:first-child {
+        display: inline-block;
+    }
+    
+    /* overflow mobile more*/
+    #header{
+        overflow: hidden;
+    }
+    #nav .subnav{
+        position: initial;
+        background-color: #333;
+    }
+    #nav .subnav a{
+        color: #fff;
+        padding: 5px 41px;
+    }
+    /* phóng to nav */
+    #nav li a{
+        padding: 1px 24px;
+    }
+
+
+
+
+
+    /* content member */
+    #content .member-item{
+        margin-top: 30px;
+        width: 100%;
+    }
+    #content .member-img{
+        width: 60%;
+    }
+
+
+
+
+
+    /* content place */
+    #content .place-item{
+        width: 100%;
+        padding-top: 16px;
+    }
+    /* buy tick to: .s-full-width*/
+    .place-buy-btn{
+        text-align: center;
+    }
+
+
+    /* mobile hiện full(chung) */
+    .s-full-width /*send to */,
+    .s-col-full{
+        width: 100%;
+    }
+
+
+
+
+    /* contact */
+    .contact-form{
+        margin-top: 16px;
+    }
+    .s-mt-8{
+        margin-top: 8px;
+    }
+}
+
+/* tablet mobile nút bấm ít nhất 42 46px*/
+@media (max-width: 1023px){
+    .place-buy-btn{
+        padding: 15px 16px;
+    }
+    .contact-form .form-control{
+        padding: 15px;
+        font-size: 16px;
+    }
+    .social-list{
+        font-size: 48px;
+    }
+
+    #footer .social-list a{
+        margin: 0 8px;
+    }
+
+    #footer .copyright a{
+        padding: 12px 0;
+        display: inline-block;
+    }
+
+    #nav .subnav a{
+        padding: 4px 12px;
+    }
+    .contact-info{
+        line-height: 2.0;
+    }
+    .form-submit-btn{
+        font-size: 16px;
+    }
+}
